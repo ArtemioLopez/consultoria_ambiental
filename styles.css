@@ -1183,5 +1183,31 @@ nav {
     margin-right: auto;
 }
 
+@media (min-width:1024px){
+    .services-section {
+        padding: 2.5rem;
+    }
+}
+
+.services-section {
+    border: #C5A059 1px solid;
+    display: flex;
+    max-width: 1280px;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+@media (min-width:1024px){
+    .grid-services {
+        border: #11d442 1px solid;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+
+
+
+
 
 
