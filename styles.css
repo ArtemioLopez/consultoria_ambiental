@@ -1190,8 +1190,8 @@ nav {
 }
 
 .services-section-container {
-    border: #C5A059 1px solid;
     display: flex;
+    padding: 2.5rem;
     max-width: 1280px;
     width: 100%;
     gap: 3rem;
@@ -1257,7 +1257,7 @@ nav {
     max-width: 720px;
 }
 
-
+/*Grid*/
 .grid-services-contain1,.grid-services-contain2,.grid-services-contain3,.grid-services-contain4,.grid-services-contain5,.grid-services-contain6 {
   /* Estilos que se aplicarán a todas */
     display: flex;
