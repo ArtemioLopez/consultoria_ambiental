@@ -1,26 +1,26 @@
- // Modal para el PDF
- const modal = document.getElementById("pdf-modal");
- const viewer = document.getElementById("pdfViewer");
- const closeBtn = document.getElementById("closeModal");
- 
+// Modal para el PDF (solo en páginas que incluyen #pdf-modal, ej. servicios.html)
+
+const modal = document.getElementById("pdf-modal");
+const viewer = document.getElementById("pdfViewer");
+const closeBtn = document.getElementById("closeModal");
+
 function openPdf(pdfPath) {
-  if (!pdfPath) return;
-  // Normalizamos por si en el HTML viene con "\"
+  if (!pdfPath || !modal || !viewer) return;
   const normalized = String(pdfPath).replace(/\\/g, "/");
   viewer.src = normalized;
   modal.classList.remove("hidden");
 }
 
-// Abrir desde cualquier link con data-pdf
-document.querySelectorAll("[data-pdf]").forEach(link => {
+document.querySelectorAll("[data-pdf]").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     openPdf(link.getAttribute("data-pdf"));
   });
 });
- 
- // Cerrar modal
- closeBtn.addEventListener("click", () => {
-   modal.classList.add("hidden");
-   viewer.src = "";
- });
+
+if (closeBtn && modal && viewer) {
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    viewer.src = "";
+  });
+}
