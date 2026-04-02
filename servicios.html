@@ -6,7 +6,7 @@
         <title>Servicios</title>
         <meta name="description" content="Consultora ambiental, ofrecemos servicios ambientales de exelencia tecnica para Mineria, industria, agro">
         <link rel="stylesheet" href="src/styles/main.css">
-        <script src="scripts/script.js" defer></script>
+        <script src="scripts/modal.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     </head>
     
@@ -63,7 +63,10 @@
                             <div><span class="material-symbols-outlined">analytics</span></div>
                             <h3>Servicios Agronomicos</h3>
                             <p>Elaboracion de estudios tecnicos detallados (EIA,DIA) para identificar, predecir y valorar las conseuencias ambientales</p>
-                            <a href="">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
+                            <a href="#" class="open-pdf" data-pdf="assets/pdf/dossier-agro.pdf#toolbar=0">
+                                Mas detalles
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
                         </div>
                     </div>
                     <div class="grid-services-contain2">
@@ -72,7 +75,7 @@
                             <div><span class="material-symbols-outlined">recycling</span></div>
                             <h3>Servicios Mineros</h3>
                             <p>Planes de manejo, valorizacion y disposicion final de residuos peligrosos y no peligrosos, cumpliendo con la Ley Rep y normativas vigentes</p>
-                            <a href="">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
+                            <a href="#" class="open-pdf" data-pdf="assets/pdf/dossier-agro.pdf">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
                         </div>
                     </div>
                     <div class="grid-services-contain3">
@@ -81,7 +84,7 @@
                             <div><span class="material-symbols-outlined">water_drop</span></div>
                             <h3>Servicios Industriales</h3>
                             <p>Servicios de muestreo y calidad de agua, aire, suelo y ruido, utilizando equipos de ultima generacion y laboratorios certificados</p>
-                            <a href="">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
+                            <a href="#" class="open-pdf" data-pdf="assets/pdf/Dossier_agro.pdf">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
                         </div>
                     <!-- </div>
                     <div class="grid-services-contain4">
@@ -178,7 +181,19 @@
           
             </div>
           </footer>
-
+          <!-- Modal para el PDF -->
+          <div id="pdf-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+          
+            <div class="modal-content">
+              <button type="button" class="modal-close" id="closeModal" aria-label="Cerrar PDF">
+                <span class="material-symbols-outlined modal-close-icon" aria-hidden="true">close</span>
+              </button>
+          
+              <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+            </div>
+          </div>
+          
     </body>
 
 </html>
