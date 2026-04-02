@@ -1,0 +1,36 @@
+/* ===== VARIABLES CSS (Custom Properties) ===== */
+
+:root {
+    /*Colores Principales*/
+    --color-primary: #11d442;
+    --color-secondary-gold: #C5A059;
+    --color-secondary-silver: #BCC6CC;
+    --color-brand-black: #111813;
+    --color-background-light: #f6f8f6;
+    --color-background-dark: #102215;
+
+    /*Tipografia*/
+    --font-display: 'Public Sans', sans-serif;
+    --tw-text-opacity: 1;
+
+    /*Border Radius*/
+    --radius-default: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-full: 9999px;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    --shadow-primary-glow: 0 0 20px rgba(17, 212, 66, 0.4);
+}
+
+/* ===== MODO OSCURO ===== */
+
+/*.dark {
+    --color-text: #ffffff;
+    --color-text-secondary: #e5e7eb;
+    --color-background: #102215;
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-border: rgba(255, 255, 255, 0.1);
+}*/

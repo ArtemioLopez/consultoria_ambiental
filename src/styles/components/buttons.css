@@ -1,0 +1,135 @@
+.button-contacto {
+    display: flex;
+    min-width: 100px;
+    height: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+    background-color: #11d442;
+    color: #111813;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow:
+        0 10px 15px -3px rgba(17, 212, 66, 0.2),
+        0 4px 6px -2px rgba(17, 212, 66, 0.2);
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.btn-hero-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    min-width: 160px;
+    padding: 0 24px;
+    background-color: var(--color-primary);
+    color: var(--color-brand-black);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(17, 212, 66, 0.4);
+    text-decoration: none;
+}
+
+.btn-hero-primary:hover {
+    transform: scale(1.05);
+}
+
+.btn-hero-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    min-width: 160px;
+    padding: 0 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-hero-secondary:hover {
+    background-color: #ffffff;
+    color: var(--color-brand-black);
+}
+
+.contact-contact a:first-of-type {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 48px;
+    background-color: rgb(17 212 66);
+    color: rgb(17 24 19);
+    font-weight: 700;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.contact-contact a:first-of-type:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(17 212 66 / 0.4);
+}
+
+.contact-contact a:nth-of-type(2) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 48px;
+    border: 1px solid rgb(188 198 204 / 0.4);
+    color: white;
+    font-weight: 700;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.contact-contact a:nth-of-type(2):hover {
+    background-color: rgb(255 255 255 / 0.08);
+    border-color: white;
+}
+
+.hero-button button {
+    display: flex;
+    color: rgb(16 34 21 / 1);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(17 212 66 / 1);
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    height: 3rem;
+    cursor: pointer;
+    text-transform: none;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+}
+
+.hero-button button:hover {
+    background-color: rgb(14 184 57 / 1);
+}
