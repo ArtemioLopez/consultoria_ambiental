@@ -9,8 +9,8 @@
 
 .footer {
     background-color: var(--color-background-dark);
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     border-top: 1px rgb(255, 255, 255, 0.1) solid;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -35,7 +35,7 @@
 
 .footer-contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2.5rem;
     justify-content: space-between;
 }
@@ -48,17 +48,25 @@
 }
 
 @media (min-width: 768px) {
-    .footer-contact-container {
-        gap: 6rem;
+    .footer-contact {
+        flex-direction: row;
+        align-items: flex-start;
     }
 }
 
 .footer-contact-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 6rem;
+    justify-content: flex-start;
+    gap: 3rem;
     text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    .footer-contact-container {
+        justify-content: center;
+        gap: 6rem;
+    }
 }
 
 .footer-empresa,
@@ -76,11 +84,15 @@
 .footer-servicios h4,
 .footer-contacto h4 {
     color: var(--color-secondary-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
 
 .footer-empresa a {
     color: rgb(188, 198, 204, 1);
-    transition: transform 0.3 ease;
+    transition: color 0.3s ease;
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
@@ -95,7 +107,7 @@
 
 .footer-servicios a {
     color: rgb(188, 198, 204, 1);
-    transition: transform 0.3 ease;
+    transition: color 0.3s ease;
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
@@ -109,7 +121,7 @@
     align-items: center;
     gap: 0.5rem;
     color: rgb(188, 198, 204, 1);
-    transition: transform 0.3 ease;
+    transition: color 0.3s ease;
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
@@ -119,16 +131,10 @@
     line-height: 1.5rem;
 }
 
-.footer-paragraph {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 300px;
-}
-
 .footer-paragraph-container {
     display: flex;
     align-items: center;
+    gap: 0.25rem;
 }
 
 .logo-icon-white {
@@ -159,13 +165,14 @@
 
 .footer-end {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     color: rgb(107 114 128 / 1);
     font-size: 0.75rem;
     line-height: 1rem;
     gap: 1rem;
     align-items: center;
+    text-align: center;
 }
 
 .footer-end-container {
@@ -175,4 +182,16 @@
 
 .footer-end-container a {
     color: rgb(107 114 128 / 1);
+    transition: color 0.3s ease;
+}
+
+.footer-end-container a:hover {
+    color: rgb(255 255 255 / 1);
+}
+
+@media (min-width: 768px) {
+    .footer-end {
+        flex-direction: row;
+        text-align: left;
+    }
 }
