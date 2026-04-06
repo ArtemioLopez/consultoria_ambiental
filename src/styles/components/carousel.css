@@ -175,3 +175,18 @@
         var(--color-brand-black)
     );
 }
+
+@media (max-width: 767px) {
+    .carousel-slide:nth-child(1) {
+        background-image: url('../../../assets/images/hero/WhatsApp Image 2026-02-10 at 18.52.29.jpeg') !important;
+    }
+    .carousel-slide:nth-child(2) {
+        background-image: url('../../../assets/images/hero/WhatsApp Image 2026-02-11 at 00.16.14.jpeg') !important;
+    }
+    .carousel-slide:nth-child(3) {
+        background-image: url('../../../assets/images/hero/elias_calera.jpeg') !important;
+    }
+    .carousel-slide:nth-child(4) {
+        background-image: url('../../../assets/images/hero/WhatsApp Image 2026-02-11 at 00.16.09.jpeg') !important;
+    }
+}

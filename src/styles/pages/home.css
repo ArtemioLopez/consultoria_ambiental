@@ -1,15 +1,17 @@
-/* Info Especializacion */
+/* ===== ÁREAS DE ESPECIALIZACIÓN ===== */
+
+.Especialización-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1.5rem;    /* movido desde el media query lg */
+    padding-right: 1.5rem;
+}
 
 @media (min-width: 1024px) {
     .Especialización-container {
         padding-left: 3rem;
         padding-right: 3rem;
     }
-}
-
-.Especialización-container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 .esp-container {
@@ -22,17 +24,18 @@
     margin-right: auto;
 }
 
+.header-esp-container {
+    display: flex;
+    flex-direction: column;   /* móvil: columna por defecto */
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
 @media (min-width: 768px) {
     .header-esp-container {
         flex-direction: row;
         align-items: flex-end;
     }
-}
-
-.header-esp-container {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: space-between;
 }
 
 .title-content {
@@ -45,11 +48,11 @@
     color: var(--color-brand-black);
     line-height: 1.25;
     font-weight: 900;
-    font-size: 1.875;
+    font-size: 1.875rem;     /* fix: tenía 1.875 sin unidad */
 }
 
 .title-content p {
-    color: rgb(107 114 128/1);
+    color: rgb(107 114 128 / 1);
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -71,50 +74,22 @@
 }
 
 .especializacion-servicios span {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: normal;
     font-family: 'Material Symbols Outlined', sans-serif;
     font-style: normal;
-}
-
-.especializacion-servicios span {
-    font-size: 1.25rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;  /* unificado: tenías el span duplicado */
 }
 
 .especializacion-servicios:hover span {
     transform: translateX(4px);
 }
 
-.grid-item1 {
-    border: transparent 1px solid;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.75rem;
-    padding: 1rem;
-    gap: 1rem;
-    transition: transform 0.3s ease;
-}
+/* ===== GRID ITEMS ===== */
 
-.grid-item1:hover {
-    border-color: rgb(188 198 204 / 0.5);
-}
-
-.grid-item2 {
-    border: transparent 1px solid;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.75rem;
-    padding: 1rem;
-    gap: 1rem;
-    transition: transform 0.3s ease;
-}
-
-.grid-item2:hover {
-    border-color: rgb(188 198 204 / 0.5);
-}
-
+.grid-item1,
+.grid-item2,
 .grid-item3 {
     border: transparent 1px solid;
     display: flex;
@@ -125,91 +100,43 @@
     transition: transform 0.3s ease;
 }
 
+.grid-item1:hover,
+.grid-item2:hover,
 .grid-item3:hover {
     border-color: rgb(188 198 204 / 0.5);
 }
 
-/* Content Img */
+/* ===== CONTENT IMG ===== */
 
-.content-img-1 {
-    border-radius: 0.5rem;
-    overflow: hidden;
-    aspect-ratio: 4/3;
-}
-
-.content-img-2 {
-    border-radius: 0.5rem;
-    overflow: hidden;
-    aspect-ratio: 4/3;
-}
-
+.content-img-1,
+.content-img-2,
 .content-img-3 {
     border-radius: 0.5rem;
     overflow: hidden;
     aspect-ratio: 4/3;
 }
 
-/* IMG */
+/* ===== IMG ===== */
 
-.content-img-1 img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    transition: transform 700ms ease;
-}
-
-.content-img-1 img:hover {
-    transform: scale(1.1);
-}
-
-.content-img-2 img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    transition: transform 700ms ease;
-}
-
-.content-img-2 img:hover {
-    transform: scale(1.1);
-}
-
+.content-img-1 img,
+.content-img-2 img,
 .content-img-3 img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    object-fit: cover;       /* fix: tenías background-* en un img, no funciona */
     transition: transform 700ms ease;
 }
 
+.content-img-1 img:hover,
+.content-img-2 img:hover,
 .content-img-3 img:hover {
     transform: scale(1.1);
 }
 
-/* Text content */
+/* ===== TEXT CONTENT ===== */
 
-.text-content {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    gap: 0.25rem;
-}
-
-.text-content2 {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    gap: 0.25rem;
-}
-
+.text-content,
+.text-content2,
 .text-content3 {
     display: flex;
     flex-direction: column;
@@ -219,55 +146,24 @@
     gap: 0.25rem;
 }
 
-/* Text detail */
-
-.text-content h3 {
-    color: rgb(17 24 19 /1);
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-}
-
-.text-content p {
-    color: rgb(107 114 128 / 1);
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
-.text-content2 h3 {
-    color: rgb(17 24 19 /1);
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-}
-
-.text-content2 p {
-    color: rgb(107 114 128 / 1);
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
+.text-content h3,
+.text-content2 h3,
 .text-content3 h3 {
-    color: rgb(17 24 19 /1);
+    color: rgb(17 24 19 / 1);
     font-weight: 700;
     font-size: 1.25rem;
-    line-height: 1.25rem;
+    line-height: 1.75rem;    /* fix: tenías 1.25rem igual que font-size, muy apretado */
 }
 
+.text-content p,
+.text-content2 p,
 .text-content3 p {
     color: rgb(107 114 128 / 1);
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;     /* fix: tenías 1.25rem, muy apretado */
 }
 
-/* Content Conteiner */
-
-@media (min-width: 1024px) {
-    .contact-conteiner {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-}
+/* ===== CTA / CONTACT ===== */
 
 .contact-conteiner {
     position: relative;
@@ -277,17 +173,25 @@
     overflow: hidden;
 }
 
+@media (max-width: 1023px) {
+    .contact-conteiner {
+        padding: 4rem 1.5rem;   /* fix: 6rem aplastaba en móvil */
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-conteiner {
+        padding: 3rem 1.25rem;
+    }
+}
+
 .contact-rigth-side {
     position: absolute;
     top: 0;
     right: 0;
     width: 35%;
     height: 100%;
-    background: linear-gradient(
-        to left,
-        rgb(197 160 89 / 0.15),
-        transparent
-    );
+    background: linear-gradient(to left, rgb(197 160 89 / 0.15), transparent);
 }
 
 .contact-left-side {
@@ -296,7 +200,7 @@
     left: 0;
     width: 300px;
     height: 300px;
-    background: rgb(17 212 66/ 0.15);
+    background: rgb(17 212 66 / 0.15);
     border-radius: 50%;
     filter: blur(100px);
 }
@@ -340,5 +244,19 @@
     .contact-contact {
         flex-direction: row;
         justify-content: center;
+    }
+}
+
+/* ===== FOOTER MÓVIL ===== */
+
+@media (max-width: 768px) {
+    .footer-contact {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-contact-container {
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 }

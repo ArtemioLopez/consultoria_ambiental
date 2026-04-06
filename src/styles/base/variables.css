@@ -27,10 +27,10 @@
 
 /* ===== MODO OSCURO ===== */
 
-/*.dark {
+.dark {
     --color-text: #ffffff;
     --color-text-secondary: #e5e7eb;
     --color-background: #102215;
     --color-card-bg: rgba(255, 255, 255, 0.05);
     --color-border: rgba(255, 255, 255, 0.1);
-}*/
+}

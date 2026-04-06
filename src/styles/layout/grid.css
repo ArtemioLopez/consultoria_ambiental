@@ -1,5 +1,4 @@
 /* Grids reutilizados en home y servicios */
-
 .feature-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -12,18 +11,22 @@
     }
 }
 
-@media (min-width: 1024px) {
+/* ===== CORRECCIÓN: faltaba el base móvil ===== */
+.especializacion-grid {
+    display: grid;
+    grid-template-columns: 1fr;   /* base móvil — FALTABA */
+    gap: 1.5rem;                  /* gap movido aquí — FALTABA */
+}
+
+@media (min-width: 640px) {
     .especializacion-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
-    .grid-services-container {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 2rem;
+    .especializacion-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
+
