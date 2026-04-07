@@ -64,10 +64,7 @@
                             <div><span class="material-symbols-outlined">analytics</span></div>
                             <h3>Servicios Agronomicos</h3>
                             <p>Elaboracion de estudios tecnicos detallados (EIA,DIA) para identificar, predecir y valorar las conseuencias ambientales</p>
-                            <a href="#" class="open-pdf" data-pdf="assets/pdf/dossier-agro.pdf#toolbar=0">
-                                Mas detalles
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </a>
+                            <a href="#" class="open-gallery" data-gallery="assets/dossier/dossier-agro-3.webp,assets/dossier/dossier-agro-4.webp,assets/dossier/dossier-agro-5.webp,assets/dossier/dossier-agro-6.webp,assets/dossier/dossier-agro-7.webp,assets/dossier/dossier-agro-8.webp,assets/dossier/dossier-agro-9.webp,assets/dossier/dossier-agro-10.webp,assets/dossier/dossier-agro-11.webp,assets/dossier/dossier-agro-12.webp,assets/dossier/dossier-agro-13.webp,assets/dossier/dossier-agro-14.webp,assets/dossier/dossier-agro-15.webp,assets/dossier/dossier-agro-16.webp">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
                         </div>
                     </div>
                     <div class="grid-services-contain2">
@@ -76,7 +73,7 @@
                             <div><span class="material-symbols-outlined">recycling</span></div>
                             <h3>Servicios Mineros</h3>
                             <p>Planes de manejo, valorizacion y disposicion final de residuos peligrosos y no peligrosos, cumpliendo con la Ley Rep y normativas vigentes</p>
-                            <a href="#" class="open-pdf" data-pdf="assets/pdf/dossier-agro.pdf">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
+                            <a href="#" class="open-gallery" data-gallery="agro">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
                         </div>
                     </div>
                     <div class="grid-services-contain3">
@@ -85,7 +82,7 @@
                             <div><span class="material-symbols-outlined">water_drop</span></div>
                             <h3>Servicios Industriales</h3>
                             <p>Servicios de muestreo y calidad de agua, aire, suelo y ruido, utilizando equipos de ultima generacion y laboratorios certificados</p>
-                            <a href="#" class="open-pdf" data-pdf="assets/pdf/Dossier_agro.pdf">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
+                            <a href="#" class="open-gallery" data-gallery="agro">Mas detalles<span class="material-symbols-outlined">arrow_forward</span></a>
                         </div>
                     <!-- </div>
                     <div class="grid-services-contain4">
@@ -182,8 +179,18 @@
           
             </div>
           </footer>
+          
+          <div id="modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+              <button id="closeModal" class="modal-close">✕</button>
+              <button id="prevSlide" class="modal-nav left">‹</button>
+              <img id="modalImage" src="" alt="Dossier">
+              <button id="nextSlide" class="modal-nav right">›</button>
+            </div>
+          </div>
           <!-- Modal para el PDF -->
-          <div id="pdf-modal" class="modal hidden">
+          <!-- <div id="pdf-modal" class="modal hidden">
             <div class="modal-overlay"></div>
           
             <div class="modal-content">
@@ -193,7 +200,7 @@
           
               <iframe id="pdfViewer" src="" frameborder="0"></iframe>
             </div>
-          </div>
+          </div> -->
           
     </body>
 
